@@ -1,0 +1,14 @@
+This zip folder contains:
+
+a) data.csv, mocking data with circumstances, weights and income. It is only used to set the 
+example in the code. Categories have no specific meaning.
+
+b) functions_exante.R, script with the R functions that run the algorithms, plot the tree and so on.
+
+c) Functions_exante.pdf, includes a basic explanation of the functions, as well as a collection of the libraries 
+employed
+
+d) exante_iop.R, shows a simple implementation of functions_exante.R into data.csv. The goal is to
+estimate IOp with trees and random forests. Both algorithms are tuned. A tree is also plotted.
+
+e) Some basic references with further details about the implementation of Trees and Random Forests into IOp
