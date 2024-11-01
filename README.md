@@ -11,3 +11,5 @@ Find two folders (Exante_IOp and Expost_IOp) containing mock data, R functions, 
 
 ### Contact
 For further clarifications, please reach out to [p.salas-rojo@lse.ac.uk](mailto:p.salas-rojo@lse.ac.uk).
+
+These R functions are intended to help with research tasks. The responsibility for using them correctly lies with the user. 
