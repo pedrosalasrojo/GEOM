@@ -1,6 +1,5 @@
 
-#         Author: Pedro Salas Rojo and Paolo Brunori
-#         Date: 07/2023
+#         Author: Pedro Salas Rojo, Paolo Brunori, and Pedro Torres-Lopez
 #         Name of project: Estimate Ex-ante IOp with Trees and Random Forests
 
 rm(list = ls(all.names = TRUE)) 

@@ -1,6 +1,5 @@
 
-#         Author: Pedro Salas Rojo and Paolo Brunori
-#         Date: 24/11/2022
+#         Author: Pedro Salas Rojo, Paolo Brunori, and Pedro Torres-Lopez
 #         Name of project: Store Ex-Post functions
 
 library(trtf)
@@ -322,7 +321,7 @@ get_trtree <- function(model, dep, data, order = 5,
   
 }
 
-# Function to get nice log nodes (Pedro Torres-Lopez) ----
+# Function to get nice log nodes ----
 
 node_dense<- function(obj,
                       log = T,
@@ -507,8 +506,6 @@ colplot <- function(data, dep, types, grouping_var){
   return(list(`plot_data` = data, `col` = col, `n_types` = n_types))
   
 }
-
-
 # Plot Mountains ----
 
 plot_mountain <- function(data, dep, group, fill, col, 
@@ -583,9 +580,6 @@ plot_ponytail <- function(data, dep, quart_var, tr,
   return(myplot)
   
 }
-
-# Plot lenv ----
-
 
 # Get log interpolations ----
 

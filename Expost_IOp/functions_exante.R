@@ -1,6 +1,5 @@
 
-#         Author: Pedro Salas Rojo and Paolo Brunori
-#         Date: 21/11/2022
+#         Author: Pedro Salas Rojo, Paolo Brunori, and Pedro Torres-Lopez
 #         Name of project: Ex-Ante IOp Functions
 
 library(caret)
