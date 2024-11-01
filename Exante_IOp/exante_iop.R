@@ -8,10 +8,10 @@ library(haven)
 library(dineq)
 
 # Get ex ante functions
-source("H:/Exante_IOp/functions_exante.R")
+source("/Exante_IOp/functions_exante.R")
 
 # Get data ----
-data <- read.csv("H:/Exante_IOp/data.csv")
+data <- read.csv("/Exante_IOp/data.csv")
 
 # Store the factored circumstances with the labels you want to show in the plotted tree
 data$Sex <- factor(data$sex)

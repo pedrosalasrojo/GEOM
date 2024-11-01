@@ -9,10 +9,10 @@ library(haven)
 library(dineq)
 
 # Get ex ante functions
-source("C:/Users/SALASROJ/Dropbox/BRUNORI&SALAS_/database_github_etc/TO SHARE/Expost_IOp/functions_expost.R")
+source("/Expost_IOp/functions_expost.R")
 
 # Get data ----
-data <- read.csv("C:/Users/SALASROJ/Dropbox/BRUNORI&SALAS_/database_github_etc/TO SHARE/Expost_IOp/data.csv")
+data <- read.csv("/Expost_IOp/data.csv")
 
 # Store the factored circumstances with the labels you want to show in the plotted tree
 

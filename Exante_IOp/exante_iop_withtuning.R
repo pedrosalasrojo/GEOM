@@ -9,10 +9,10 @@ library(dineq)
 library(Metrics)
 
 # Get ex ante functions
-source("C:/Users/user/Downloads/Exante_IOp/Exante_IOp/functions_exante.R")
+source("/Exante_IOp/functions_exante.R")
 
 # Get data ----
-data <- read.csv("C:/Users/user/Downloads/Exante_IOp/Exante_IOp/data.csv")
+data <- read.csv("/Exante_IOp/Exante_IOp/data.csv")
 
 # Store the factored circumstances with the labels you want to show in the plotted tree
 data$Sex <- factor(data$sex)

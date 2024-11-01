@@ -1,17 +1,16 @@
 
-#         Author: Pedro Salas Rojo, Paolo Brunori, and Pedro Torres-Lopez
-#         Name of project:Apply Shapley-value decomposition to IOp
+#         Author: Pedro Salas Rojo, Paolo Brunori, and Pedro Torres-Lopez#         Name of project:Apply Shapley-value decomposition to IOp
 
 rm(list = ls(all.names = TRUE)) 
 library(dplyr)
 
-source("C:/Users/user/Dropbox/BRUNORI&SALAS_/database_github_etc/TO SHARE/Expost_IOp/Expost_IOp/functions_exante.R")
-source("C:/Users/user/Dropbox/BRUNORI&SALAS_/database_github_etc/TO SHARE/Expost_IOp/Expost_IOp/functions_expost.R")
-source("C:/Users/user/Dropbox/BRUNORI&SALAS_/database_github_etc/TO SHARE/Expost_IOp/Expost_IOp/functions_shapley.R")
+source("/Expost_IOp/functions_exante.R")
+source("/Expost_IOp/functions_expost.R")
+source("/Expost_IOp/functions_shapley.R")
 
 # Get data, define model, define circumstances
 
-data <- read.csv("C:/Users/user/Dropbox/BRUNORI&SALAS_/database_github_etc/TO SHARE/Expost_IOp/Expost_IOp/data.csv")
+data <- read.csv("/Expost_IOp/Expost_IOp/data.csv")
 
 circum <- c("eth", "focc", "fedu", "sex")
 
