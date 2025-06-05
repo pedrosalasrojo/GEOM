@@ -6,7 +6,7 @@ Find two folders (Exante_IOp and Expost_IOp) containing mock data, R functions, 
 
 ### Authors
 - [Paolo Brunori](http://www.unicaldine.it/)
-- [Pedro Salas-Rojo](https://sites.google.com/view/pedrosalasrojo/home)
+- [Pedro Salas-Rojo](https://www.pedrosalasrojo.com/)
 - [Pedro Torres-López](https://www.lse.ac.uk/social-policy/people/research-students/pedro-torres-lopez)
 
 ### Contact
