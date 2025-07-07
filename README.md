@@ -4,6 +4,8 @@ This repository contains all R functions used to estimate **Inequality of Opport
 
 Find two folders (Exante_IOp and Expost_IOp) containing mock data, R functions, and supporting references to estimate ex-ante and ex-post Inequality of Opportunity. The R functions also include resources for plotting trees, ECDF, and other similar plots deployed in GEOM. All functions are documented in PDF files, and scripts providing examples of how to estimate IOp and obtain all results are also included.
 
+The repository also includes the GEOM main results as .csv, as on July 2025th. 
+
 ### Authors
 - [Paolo Brunori](http://www.unicaldine.it/)
 - [Pedro Salas-Rojo](https://www.pedrosalasrojo.com/)
