@@ -147,7 +147,7 @@ tune_trafotree <- function(model, data, folds = 5, minorder = 2,
 
 get_trtree <- function(model, dep, data, order = 5,
                        mincri = 0.99, minbu = 100, centiles = 99, maxd = Inf,
-                       rel.ineq = TRUE, lenv = TRUE, share_lenv = 0.1) {
+                       rel.ineq = TRUE) {
   
   
   if(nrow(data)<=3000){
@@ -261,63 +261,8 @@ get_trtree <- function(model, dep, data, order = 5,
     data$y_tilde<-data$yhat - data$mj   
   }
   
-  if (lenv==TRUE){
-    
-    EOP.x<-1:centiles
-    EO.p<-1:centiles
-    TRE<-TR[,1:nti]
-    
-    if (dim(as.matrix(TRE))[2]>1){
-      
-      for (qt in 1:centiles){
-        
-        TRE[qt,1:nti]<-TR[qt,order(TR[qt,1:nti])] # types ordered according to their outcome in each quantile 
-        QI[qt,1:nti]<-QI[qt,order(TR[qt,1:nti])]
-        upto<-as.numeric(table(cumsum(QI[qt,1:nti])>share_lenv)[1])
-        
-        if (upto==nti){
-          upto<-upto-1
-        }
-        
-        EOP.x[qt]<-sum(QI[qt,1:(upto+1)]*TRE[qt,1:(upto+1)])/sum(QI[qt,1:(upto+1)]) # weighted average 
-        EO.p[qt]<-min(TR[qt,order(TR[qt,1:nti])])
-        
-        if (QI[qt,1]> share_lenv){ 
-          EOP.x[qt] <- EO.p[qt] 
-        } # in case the lowest type 
-        
-      }
-      
-      EOP<-sum(apply(TRE, 1, min))*(1/(centiles+1))
-      EOPX<-sum(EOP.x)*(1/(centiles+1))
-      
-    } else {
-      
-      EOP<-mean(as.numeric(TRE))  
-      EOPX<-mean(as.numeric(TRE))  
-      
-    }
-    
-  } else {
-    
-    EOP <- NA
-    EOPX<- NA
-    
-  }
-  
-  data$eop_thres <- NA
-  data$eopx_thres <- NA
-  
-  for (p in 1:length(pctls)){
-    data$eopx_thres[data$tranche==pctls[p]] <- EOP.x[p] 
-    data$eop_thres[data$tranche==pctls[p]] <- EO.p[p] 
-    
-  }
-
-  data$eop_belong <- ifelse(data$yhat <= data$eop_thres, 1, 0)
-  data$eopx_belong <- ifelse(data$yhat <= data$eopx_thres, 1, 0)
-  
-  return(list(`trafodata` = data, `tree` = trtree, `qtl` = qtl, `tr` = TR, `eop` = EOP, `eopx` = EOPX )) 
+ 
+  return(list(`trafodata` = data, `tree` = trtree, `qtl` = qtl, `tr` = TR)) 
   
 }
 
