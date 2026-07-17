@@ -2,6 +2,8 @@
 
 This repository contains all R functions used to estimate **Inequality of Opportunity** in the Global Estimates of Opportunity and Mobility (**[GEOM](https://geom.ecineq.org/)**) database. 
 
+The paper describing the database can be found here: [https://researchonline.lse.ac.uk/id/eprint/130992/](https://researchonline.lse.ac.uk/id/eprint/130992/)
+
 Find two folders (Exante_IOp and Expost_IOp) containing mock data, R functions, and supporting references to estimate ex-ante and ex-post Inequality of Opportunity. The R functions also include resources for plotting trees, ECDF, and other similar plots deployed in GEOM. All functions are documented in PDF files, and scripts providing examples of how to estimate IOp and obtain all results are also included.
 
 ### Authors
@@ -10,6 +12,6 @@ Find two folders (Exante_IOp and Expost_IOp) containing mock data, R functions, 
 - [Pedro Torres-López](https://www.lse.ac.uk/social-policy/people/research-students/pedro-torres-lopez)
 
 ### Contact
-For further clarifications, please reach out to [p.salas-rojo@lse.ac.uk](mailto:p.salas-rojo@lse.ac.uk).
+For further clarifications, please reach out to [pedro.salas@cunef.edu](mailto:pedro.salas@cunef.edu).
 
 These R functions are intended to help with research tasks. The responsibility for using them correctly lies with the user. 
